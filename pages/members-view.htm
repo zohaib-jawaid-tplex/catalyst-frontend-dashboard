@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adminty - Premium Admin Template by Colorlib </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="keywords"
+        content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./../libraries/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+
+    <link rel="icon" href="./../libraries/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/bower_components/bootstrap/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/icofont/css/icofont.css">
+    <!-- feather Awesome -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/feather/css/feather.css">
+    <!-- Style.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css"> -->
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                        <a href="index.htm">
+                            <img width="80%" class="img-fluid" src="../libraries/assets/images/logo2.png"
+                                alt="Theme-Logo">
+                        </a>
+                        <a class="mobile-options">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-addon search-close"><i
+                                                class="feather icon-x"></i></span>
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon search-btn"><i
+                                                class="feather icon-search"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="feather icon-maximize full-screen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="../libraries/assets/images/avatar-4.jpg" class="img-radius"
+                                            alt="User-Profile-Image">
+                                        <span>Zohaib Jawaid</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu"
+                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="feather icon-settings"></i> Settings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="user-profile.htm">
+                                                <i class="feather icon-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-lock-screen.htm">
+                                                <i class="feather icon-lock"></i> Lock Screen
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./../auth-normal-sign-in.htm">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Sidebar chat start -->
+            <div id="sidebar" class="users p-chat-user showChat">
+                <div class="had-container">
+                    <div class="card card_main p-fixed users-main">
+                        <div class="user-box">
+                            <div class="chat-inner-header">
+                                <div class="back_chatBox">
+                                    <div class="right-icon-control">
+                                        <input type="text" class="form-control  search-text" placeholder="Search Friend"
+                                            id="search-friends">
+                                        <div class="form-icon">
+                                            <i class="icofont icofont-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-friend-list">
+                                <div class="media userlist-box" data-id="1" data-status="online"
+                                    data-username="Josephin Doe" data-toggle="tooltip" data-placement="left"
+                                    title="Josephin Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius img-radius"
+                                            src="libraries\assets\images\avatar-3.jpg" alt="Generic placeholder image ">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Josephin Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="2" data-status="online"
+                                    data-username="Lary Doe" data-toggle="tooltip" data-placement="left"
+                                    title="Lary Doe">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="libraries\assets\images\avatar-2.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Lary Doe</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice"
+                                    data-toggle="tooltip" data-placement="left" title="Alice">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="libraries\assets\images\avatar-4.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alice</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="4" data-status="online" data-username="Alia"
+                                    data-toggle="tooltip" data-placement="left" title="Alia">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="libraries\assets\images\avatar-3.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Alia</div>
+                                    </div>
+                                </div>
+                                <div class="media userlist-box" data-id="5" data-status="online" data-username="Suzen"
+                                    data-toggle="tooltip" data-placement="left" title="Suzen">
+                                    <a class="media-left" href="#!">
+                                        <img class="media-object img-radius" src="libraries\assets\images\avatar-2.jpg"
+                                            alt="Generic placeholder image">
+                                        <div class="live-status bg-success"></div>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="f-13 chat-header">Suzen</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat start-->
+            <div class="showChat_inner">
+                <div class="media chat-inner-header">
+                    <a class="back_chatBox">
+                        <i class="feather icon-chevron-left"></i> Josephin Doe
+                    </a>
+                </div>
+                <div class="media chat-messages">
+                    <a class="media-left photo-table" href="#!">
+                        <img class="media-object img-radius img-radius m-t-5" src="libraries\assets\images\avatar-3.jpg"
+                            alt="Generic placeholder image">
+                    </a>
+                    <div class="media-body chat-menu-content">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="media chat-messages">
+                    <div class="media-body chat-menu-reply">
+                        <div class="">
+                            <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+                            <p class="chat-time">8:20 a.m.</p>
+                        </div>
+                    </div>
+                    <div class="media-right photo-table">
+                        <a href="#!">
+                            <img class="media-object img-radius img-radius m-t-5"
+                                src="libraries\assets\images\avatar-4.jpg" alt="Generic placeholder image">
+                        </a>
+                    </div>
+                </div>
+                <div class="chat-reply-box p-b-20">
+                    <div class="right-icon-control">
+                        <input type="text" class="form-control search-text" placeholder="Share Your Thoughts">
+                        <div class="form-icon">
+                            <i class="feather icon-navigation"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar inner chat end-->
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="pcoded-navigatio-lavel">Navigation</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="../index.htm">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Customer Service</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="active">
+                                            <a href="members-search.htm">
+                                                <span class="pcoded-mtext">Member Search</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="trx.search.htm">
+                                                <span class="pcoded-mtext">Trx Search</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Reports</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Power BI</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="dashboard-crm.htm">
+                                                <span class="pcoded-mtext">Statics</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Segmentation Tool</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Campaign Selection</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                 <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Gift Cards</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Search</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Bulk Load</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Gift Card Admin</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Reward Admin</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="rewards-list.htm">
+                                                <span class="pcoded-mtext">Rewards</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                        <span class="pcoded-mtext">Program Admin</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="index-1.htm">
+                                                <span class="pcoded-mtext">Loyality & Tiers</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-header start -->
+                                    <div class="page-header">
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-8">
+                                                <div class="page-header-title">
+                                                    <div class="d-inline">
+                                                        <h4>Member Search</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="page-header-breadcrumb">
+                                                    <ul class="breadcrumb-title">
+                                                        <li class="breadcrumb-item">
+                                                            <a href="index-1.htm"> <i class="feather icon-home"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="breadcrumb-item"><a href="#!">Customer Service</a>
+                                                        </li>
+                                                        <li class="breadcrumb-item"><a href="#!">Member Search</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Page-header end -->
+
+                                    <!-- Page body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- Basic Form Inputs card start -->
+
+                                                <div class="">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-xl-12">
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs md-tabs tabs-left b-none"
+                                                                role="tablist">
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link active" data-toggle="tab"
+                                                                        href="#home5" role="tab">Dashboard</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#profile" role="tab">Profile</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#address5" role="tab">Address</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#contactDetails" role="tab">Contact Details</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#manualClaim" role="tab">Manual Claim</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#audit" role="tab">Audit</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#devices" role="tab">Devices</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#loyalView" role="tab">Loyality View</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#community" role="tab">Community</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#segment" role="tab">Segment</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#memberLink" role="tab">Member Link</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#memberDocument" role="tab">Member Document</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#pointTransfer" role="tab">Points Transfer</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#transactionInfo" role="tab">Transaction Info</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab"
+                                                                        href="#receipts" role="tab">Receipts</a>
+                                                                    <div class="slide"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content tabs-left-content card-block">
+                                                                <div class="tab-pane active" id="home5" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Member
+                                                                                    Overview</h5>
+                                                                                <br>
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">Language:</span>
+                                                                                            <span>English</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-2">
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">Member
+                                                                                                Id:</span>
+                                                                                            <span>4874156</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">Surname:</span>
+                                                                                            <span>English</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-2">
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">Member
+                                                                                                Since:</span>
+                                                                                            <span>4874156</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">First
+                                                                                                Name:</span>
+                                                                                            <span>English</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-2">
+                                                                                    </div>
+                                                                                    <div class="col-lg-12 col-xl-4">
+                                                                                        <div class="membersOviewTable">
+                                                                                            <span
+                                                                                                class="membersOverViewInner">External
+                                                                                                Reference:</span>
+                                                                                            <span>4874156</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-4">
+                                                                                <h5 class="memberOviewHeading pb-1">
+                                                                                    Address</h5>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Address
+                                                                                        Line 1:</span>
+                                                                                    <span>Xyz , Ireland</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Address
+                                                                                        Line 2:</span>
+                                                                                    <span>4874156</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">City:</span>
+                                                                                    <span>Clayton</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">ZIP:</span>
+                                                                                    <span
+                                                                                        class="align-left">36016</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">State:</span>
+                                                                                    <span>Kentucky</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Country:</span>
+                                                                                    <span>United States</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Address
+                                                                                        Validity:</span>
+                                                                                    <span>Valid</span>
+                                                                                </div>
+
+                                                                                <!-- </div> -->
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-2"></div>
+                                                                            <div class="col-lg-12 col-xl-4">
+                                                                                <h5 class="memberOviewHeading pb-1">
+                                                                                    Contact Details</h5>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Email:</span>
+                                                                                    <span>zohaib.jawaid@snipp.com</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Telephone:</span>
+                                                                                    <span>+1 102 102 102</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Mobile:</span>
+                                                                                    <span>089 102 41 178 97</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Contact by Email:</span>
+                                                                                    <span
+                                                                                        class="align-left">No</span>
+                                                                                </div>
+                                                                                <div class="membersOviewTable pb-1">
+                                                                                    <span
+                                                                                        class="membersOverViewInner">Contact by Email:</span>
+                                                                                    <span>No</span>
+                                                                                </div>
+                                                                                <!-- </div> -->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                      <!-- Community  Card-->
+                                                                    <div class="card p-50">
+                                                                        <div class="header mb-3">
+                                                                            <h5>Community</h5>
+                                                                        </div>
+                                                                        <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table"
+                                                                                class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>MemberId</th>
+                                                                                        <th>Name</th>
+                                                                                        <th>Member Status</th>
+                                                                                        <th>Community Status</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>2131232</td>
+                                                                                        <td>Baseline head</td>
+                                                                                        <td>Surname</td>
+                                                                                        <td>test_AssignCoupon</td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <!-- Bonus Account  -->
+                                                                    <div class="card p-50">
+                                                                        <div class="header mb-3">
+                                                                            <h5>Bonus Account</h5>
+                                                                        </div>
+                                                                        <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table"
+                                                                                class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Trx Type</th>
+                                                                                        <th>Trx Date</th>
+                                                                                        <th>Location</th>
+                                                                                        <th>Discount</th>
+                                                                                        <th>Net Value</th>
+                                                                                        <th>Points</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>Manual Claim</td>
+                                                                                        <td>09/12/2020 12:43:00</td>
+                                                                                        <td>BaseLine head</td>
+                                                                                        <td>0</td>
+                                                                                        <td>0</td>
+                                                                                        <td>12</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Manual Claim</td>
+                                                                                        <td>09/12/2020 12:43:00</td>
+                                                                                        <td>BaseLine head</td>
+                                                                                        <td>0</td>
+                                                                                        <td>0</td>
+                                                                                        <td>12</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>Manual Claim</td>
+                                                                                        <td>09/12/2020 12:43:00</td>
+                                                                                        <td>BaseLine head</td>
+                                                                                        <td>0</td>
+                                                                                        <td>0</td>
+                                                                                        <td>12</td>
+                                                                                    </tr>
+
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                    </div>
+                                                                      <!-- Open Coupons  -->
+                                                                      <div class="card p-50">
+                                                                        <div class="header mb-3">
+                                                                            <h5>Open Coupons</h5>
+                                                                        </div>
+                                                                        <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table"
+                                                                                class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Device - ID</th>
+                                                                                        <th>Description</th>
+                                                                                        <th>Valid until</th>
+                                                                                        <th>Value</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td>12145</td>
+                                                                                        <td>random device</td>
+                                                                                        <td>10/10/2024</td>
+                                                                                        <td>450</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>12145</td>
+                                                                                        <td>random device</td>
+                                                                                        <td>10/10/2024</td>
+                                                                                        <td>450</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!--  -->
+                                                                <div class="tab-pane" id="profile" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Personal Information</h5>
+                                                                                <br>
+                                                                                <form>
+                                                                                    <div class="form-group row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Member ID</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input id="userName-21" name="userName"
+                                                                                                        type="text" class=" form-control" value="1401234"
+                                                                                                        placeholder="Enter Snipp Member ID" readonly>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block">Member Since</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="datetime" class="form-control"
+                                                                                                        placeholder="External Reference" value="07/07/2020" readonly>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Date of Birth</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="date" id="dateofBirth" class="form-control"
+                                                                                                        placeholder="Enter DOB">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Home Store</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="text" class="form-control" value="Baseline Head" readonly
+                                                                                                        placeholder="Enter Baseline head">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block">Surname</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="text" class="form-control"
+                                                                                                        placeholder="Enter Surname" value="Jawaid">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">First
+                                                                                                        Name</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="text" class="form-control"
+                                                                                                        placeholder="Enter First Name" value="Zohaib">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Status</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="text" class="form-control" readonly
+                                                                                                        placeholder="Enter Zip Code" value="Active">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="mt-3 col-sm-12">
+                                                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                                                        <label>
+                                                                                                            <input type="checkbox" value="true" checked>
+                                                                                                            <span class="cr">
+                                                                                                                <i
+                                                                                                                    class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                                            </span>
+                                                                                                            <span>Contact By eMail</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="mt-3 col-sm-12">
+                                                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                                                        <label>
+                                                                                                            <input type="checkbox" value="" checked>
+                                                                                                            <span class="cr">
+                                                                                                                <i
+                                                                                                                    class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                                            </span>
+                                                                                                            <span>Contact By Mail</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="mt-3 col-sm-12">
+                                                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                                                        <label>
+                                                                                                            <input type="checkbox" checked value="">
+                                                                                                            <span class="cr">
+                                                                                                                <i
+                                                                                                                    class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                                            </span>
+                                                                                                            <span>Contact By Phone</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="mt-3 col-sm-12">
+                                                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                                                        <label>
+                                                                                                            <input type="checkbox"  checked value="">
+                                                                                                            <span class="cr">
+                                                                                                                <i
+                                                                                                                    class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                                            </span>
+                                                                                                            <span>Contact By SMS</span>
+                                                                                                        </label>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12">
+                                                                                <h5 class="memberOviewHeading pb-1">
+                                                                                    Address</h5>
+                                                                                    <br>
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <div class="col-sm-12">
+                                                                                                <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">Search Location</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input id="userName-21" name="userName"
+                                                                                                            type="text" class=" form-control" value="USA"
+                                                                                                            placeholder="Enter Your Location">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2"
+                                                                                                            class="block">Address Line 1</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="text" class="form-control"
+                                                                                                            placeholder="Enter Address 1" value="t777">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">Address Line 2</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="text" id="dateofBirth" class="form-control"
+                                                                                                            placeholder="Enter Address 2">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">ZIP</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="number" class="form-control" value="560524"
+                                                                                                            placeholder="Enter Zip Code">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2"
+                                                                                                            class="block">City</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="text" class="form-control"
+                                                                                                            placeholder="Enter City" value="Calafornia">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">Country</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="text" class="form-control"
+                                                                                                            placeholder="Enter Country" value="USA">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">State</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="text" class="form-control"
+                                                                                                            placeholder="Enter State" value="Calafornia">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                <!-- </div> -->
+                                                                            </div>
+                                                                            <!-- Contact Details -->
+                                                                            <div class="col-lg-12 col-xl-12">
+                                                                                <h5 class="memberOviewHeading pb-1">Contact Details</h5>
+                                                                                    <br>
+                                                                                    <form>
+                                                                                        <div class="form-group row">
+                                                                                            <div class="col-sm-12">
+                                                                                                <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">eMail</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input id="userName-21" name="userName"
+                                                                                                            type="email" class=" form-control" value="zohaib.jawaid@snipp.com" readonly
+                                                                                                            placeholder="Enter Your eMail">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2"
+                                                                                                            class="block">Mobile Number</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="number" class="form-control"
+                                                                                                            placeholder="Enter Mobile Number" min="0" value="0894217597">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-sm-6">
+                                                                                                <div class="form-group row">
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <label for="userName-2" class="block">Telephone</label>
+                                                                                                    </div>
+                                                                                                    <div class="col-sm-12">
+                                                                                                        <input type="number" id="dateofBirth" min="0" class="form-control"
+                                                                                                            placeholder="Enter Telephone">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+
+                                                                                <!-- </div> -->
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!--  -->
+                                                                <div class="tab-pane" id="address5" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <h5 class="memberOviewHeading pb-1">Address Details</h5>
+                                                                        <br>
+                                                                        <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Status</th>
+                                                                                        <th>Address Type</th>
+                                                                                        <th>Valid Status</th>
+                                                                                        <th>Address Line 1</th>
+                                                                                        <th>Zip</th>
+                                                                                        <th>City</th>
+                                                                                        <th>Updated</th>
+                                                                                        <th>Updated By</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>Current</td>
+                                                                                <td>Main</td>
+                                                                                <td>Valid</td>
+                                                                                <td>t777</td>
+                                                                                <td>3601</td>
+                                                                                <td>Clayton</td>
+                                                                                <td>05/12/2021</td>
+                                                                                <td>support.ie</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Current</td>
+                                                                                <td>Main</td>
+                                                                                <td>Valid</td>
+                                                                                <td>t777</td>
+                                                                                <td>3601</td>
+                                                                                <td>Clayton</td>
+                                                                                <td>05/12/2021</td>
+                                                                                <td>support.ie</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="contactDetails" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <h5 class="memberOviewHeading pb-1">Address Details</h5>
+                                                                        <br>
+                                                                        <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Email</th>
+                                                                                        <th>Mobile Phone</th>
+                                                                                        <th>Phone</th>
+                                                                                        <th>Type</th>
+                                                                                        <th></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>zohaib.jawaid@snipp.com</td>
+                                                                                <td>031548231231</td>
+                                                                                <td>41654564</td>
+                                                                                <td>Main</td>
+                                                                                <td>
+                                                                                    <button class="w-20 btn btn-success btn-icon"><i class="icofont icofont-edit-alt"></i></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>zohaib.jawaid@snipp.com</td>
+                                                                                <td>031548231231</td>
+                                                                                <td>41654564</td>
+                                                                                <td>Main</td>
+                                                                                <td>
+                                                                                    <button class="w-20 btn btn-success btn-icon"><i class="icofont icofont-edit-alt"></i></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>zohaib.jawaid@snipp.com</td>
+                                                                                <td>031548231231</td>
+                                                                                <td>41654564</td>
+                                                                                <td>Main</td>
+                                                                                <td>
+                                                                                    <button class="w-20 btn btn-success btn-icon"><i class="icofont icofont-edit-alt"></i></button>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="manualClaim" role="tabpanel">
+                                                                    <div class="card w-200 p-5">
+                                                                        No permission to create manual claim.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="audit" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Audit</h5>
+                                                                                <br>
+                                                                                <form>
+                                                                                    <div class="form-group row">
+                                                                                        <div class="col-sm-5">
+                                                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Member ID</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input id="userName-21" name="userName"
+                                                                                                        type="text" class=" form-control" value="1401234"
+                                                                                                        placeholder="Enter Snipp Member ID" readonly>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-5">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block">Member Since</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input type="datetime" class="form-control"
+                                                                                                        placeholder="External Reference" value="07/07/2020" readonly>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-2">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <button style="margin-top: 7px;height: 80%;" class="btn btn-grd-success">Search Results</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                            <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Id</th>
+                                                                                        <th>FieldName</th>
+                                                                                        <th>OldValue</th>
+                                                                                        <th>NewValue</th>
+                                                                                        <th>ChangeBy</th>
+                                                                                        <th>ChangeDate</th>
+                                                                                        <th>Reason</th>
+                                                                                        <th>OpId</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>1169604</td>
+                                                                                <td>Ticket</td>
+                                                                                <td>154854</td>
+                                                                                <td>Ticket 08282020676801 deleted</td>
+                                                                                <td>zohaib.jawaid</td>
+                                                                                <td>04/19/2022 12:35:32</td>
+                                                                                <td>Ticket Deleted</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>1169604</td>
+                                                                                <td>Ticket</td>
+                                                                                <td>154854</td>
+                                                                                <td>Ticket 08282020676801 deleted</td>
+                                                                                <td>zohaib.jawaid</td>
+                                                                                <td>04/19/2022 12:35:32</td>
+                                                                                <td>Ticket Deleted</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="devices" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        You do not have permission to view the page.
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Loyality View TabPanel -->
+                                                                <div class="tab-pane" id="loyalView" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <h5 class="memberOviewHeading pb-1">Account Information</h5>
+                                                                        <p>Bonus relevant turnover 389.99</p>
+                                                                        <br>
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                    <h5 class="memberOviewHeading pb-1">Open Financial Vouchers</h5>
+                                                                                    <br>
+                                                                                    <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>DeviceId</th>
+                                                                                                <th>Create Date</th>
+                                                                                                <th>Exiration Date</th>
+                                                                                                <th>Cash Balance</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                    <tr>
+                                                                                        <td>100203</td>
+                                                                                        <td>05/10/2022 4:30:00</td>
+                                                                                        <td>05/12/2022 4:30:00</td>
+                                                                                        <td>389.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                      
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                    <h5 class="memberOviewHeading pb-1">Redeemed Financial Vouchers</h5>
+                                                                                    <br>
+                                                                                    <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>DeviceId</th>
+                                                                                                <th>Create Date</th>
+                                                                                                <th>Exiration Date</th>
+                                                                                                <th>Cash Balance</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                    <tr>
+                                                                                        <td>100203</td>
+                                                                                        <td>05/10/2022 4:30:00</td>
+                                                                                        <td>05/12/2022 4:30:00</td>
+                                                                                        <td>389.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                      
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                    <h5 class="memberOviewHeading pb-1">Pending Coupons</h5>
+                                                                                    <br>
+                                                                                    <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>VoucherID</th>
+                                                                                                <th>Description</th>
+                                                                                                <th>Valid From</th>
+                                                                                                <th>Valid To</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                    <tr>
+                                                                                        <td>100203</td>
+                                                                                        <td>Ticket Disabled</td>
+                                                                                        <td>05/12/2022 4:30:00</td>
+                                                                                        <td>05/12/2024 4:30:00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                      
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                    <h5 class="memberOviewHeading pb-1">Used Coupons</h5>
+                                                                                    <br>
+                                                                                    <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>VoucherID</th>
+                                                                                                <th>Description</th>
+                                                                                                <th>Trx Date</th>
+                                                                                                <th>Store</th>
+                                                                                                <th>Amount</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                    <tr>
+                                                                                        <td>100203</td>
+                                                                                        <td>Ticket Disabled</td>
+                                                                                        <td>05/12/2022 4:30:00</td>
+                                                                                        <td>None</td>
+                                                                                        <td>10.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                      
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                    <h5 class="memberOviewHeading pb-1">Used Promotions</h5>
+                                                                                    <br>
+                                                                                    <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                        <thead>
+                                                                                            <tr>
+                                                                                                <th>PromotionName</th>
+                                                                                                <th>Trx Date</th>
+                                                                                                <th>Store</th>
+                                                                                                <th>Description</th>
+                                                                                                <th>Value</th>
+                                                                                            </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                    <tr>
+                                                                                        <td>Lita Promotion</td>
+                                                                                        <td>05/12/2022 4:30:00</td>
+                                                                                        <td>None</td>
+                                                                                        <td>None</td>
+                                                                                        <td>10.00</td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                                      
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Community -->
+                                                                <div class="tab-pane" id="community" role="tabpanel">
+                                                                    <!-- <div class="card p-5">
+                                                                        You do not have permission to view the page.
+                                                                    </div> -->
+                                                                </div>
+                                                                <div class="tab-pane" id="segment" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Add Segment</h5>
+                                                                                <br>
+                                                                                <form>
+                                                                                    <div class="form-group row">
+                                                                                        <div class="col-sm-8">
+                                                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Segment</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <!-- <input id="userName-21" name="userName"
+                                                                                                        type="text" class=" form-control" value="1401234"
+                                                                                                        placeholder="Enter Snipp Member ID" readonly> -->
+                                                                                                        <select name="select" class="form-control">
+                                                                                                            <option value="opt1">Select Segment</option>
+                                                                                                            <option value="opt2">DURA - QA</option>
+                                                                                                        </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-1">
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <button style="margin-top: 7px;height: 80%;" class="btn btn-grd-success">Add Segment</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                            <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Name</th>
+                                                                                        <th>Valid From</th>
+                                                                                        <th>Valid To</th>
+                                                                                        <th></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>Birthday Segment</td>
+                                                                                <td>02/08/2021</td>
+                                                                                <td>02/23/2021</td>
+                                                                                <td>
+                                                                                    <button class="btn btn-danger btn-round">Remove</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>DURA-QA</td>
+                                                                                <td>02/08/2021</td>
+                                                                                <td>02/23/2021</td>
+                                                                                <td>
+                                                                                    <button class="btn btn-danger btn-round">Remove</button>
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Tiers</h5>
+                                                                                <br>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                            <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>Name</th>
+                                                                                        <th>Description</th>
+                                                                                        <th></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>Birthday Segment</td>
+                                                                                <td>Xyz</td>
+                                                                                <td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Birthday Segment</td>
+                                                                                <td>Xyz</td>
+                                                                                <td>
+                                                                                </td>
+                                                                            </tr>
+                                                                            
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Member Link -->
+                                                                <div class="tab-pane" id="memberLink" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Member Link</h5>
+                                                                                <br>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                            <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>MemberId</th>
+                                                                                        <th>Name</th>
+                                                                                        <th>Street</th>
+                                                                                        <th>Zip/City</th>
+                                                                                        <th>Date Of Birth</th>
+                                                                                        <th>Link Type</th>
+                                                                                        <th>Relation</th>
+                                                                                        <th>Date</th>
+                                                                                        <th>Confidence Level</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>14654894</td>
+                                                                                <td>Zohaib Jawaid</td>
+                                                                                <td></td>
+                                                                                <td>P31 TW30 Cork</td>
+                                                                                <td>02/10/2022</td>
+                                                                                <td>Family</td>
+                                                                                <td>Other</td>
+                                                                                <td>08/03/2022</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>14654894</td>
+                                                                                <td>Zohaib Jawaid</td>
+                                                                                <td></td>
+                                                                                <td>P31 TW30 Cork</td>
+                                                                                <td>02/10/2022</td>
+                                                                                <td>Family</td>
+                                                                                <td>Other</td>
+                                                                                <td>08/03/2022</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Member Document -->
+                                                                <div class="tab-pane" id="memberDocument" role="tabpanel">  
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Register Form</h5>
+                                                                                <br>
+                                                                                <form>
+                                                                                    <div class="form-group row">
+                                                                                        <div class="col-sm-8">
+                                                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2" class="block">Upload Form</label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <input id="userName-21" name="userName"
+                                                                                                        type="file" class=" form-control" value=""
+                                                                                                        placeholder="Upload File" readonly>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-4">
+                                                                                            <div class="form-group row">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <label for="userName-2"
+                                                                                                        class="block"></label>
+                                                                                                </div>
+                                                                                                <div class="col-sm-12">
+                                                                                                    <button style="margin-top: 7px;" class="btn btn-grd-success">Upload Button</button>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                       
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <!-- <div class="row"> -->
+                                                                                <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                    <h5 class="memberOviewHeading">Member Document</h5>
+                                                                                    <br>
+                                                                                </div>
+                                                                                <div class="col-lg-12 col-xl-12">
+                                                                                <div class="dt-responsive table-responsive">
+                                                                                <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>DocumentId</th>
+                                                                                            <th>Document Name</th>
+                                                                                            <th>Document Type</th>
+                                                                                            <th></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                <tr>
+                                                                                    <td>63</td>
+                                                                                    <td>1402609-20210519132133-REST-101.pdf</td>
+                                                                                    <td>GeneralDOc</td>
+                                                                                    <td></td>
+                                                                                </tr>                                                                            
+                                                                            </tbody>
+                                                                                  
+                                                                                </table>
+                                                                            </div>
+                                                                                </div>
+                                                                            <!-- </div> -->
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                    <!-- <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                                <h5 class="memberOviewHeading">Member Document</h5>
+                                                                                <br>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-12 mb-3">
+                                                                            <div class="dt-responsive table-responsive">
+                                                                            <table id="dom-table" class="table table-striped table-bordered nowrap">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>DocumentId</th>
+                                                                                        <th>Document Name</th>
+                                                                                        <th>Document Type</th>
+                                                                                        <th></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                            <tr>
+                                                                                <td>63</td>
+                                                                                <td>1402609-20210519132133-REST-101.pdf</td>
+                                                                                <td>GeneralDOc</td>
+                                                                                <td></td>
+                                                                            </tr>                                                                            
+                                                                        </tbody>
+                                                                              
+                                                                            </table>
+                                                                        </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> -->
+                                                                </div>
+                                                                <!-- Points transfer -->
+                                                                <div class="tab-pane" id="pointTransfer" role="tabpanel">
+                                                                    <div class="card p-5">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-xl-6 mb-3">
+                                                                                <div>Loyality Device</div>
+                                                                                <div>V00661435</div>
+                                                                            </div>
+                                                                            <div class="col-lg-12 col-xl-6 mb-3">
+                                                                                <div>Loyality Balance</div>
+                                                                                <div>389.89</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="card">
+                                                    <div class="card-block">
+                                                        <h4 class="sub-title">Member Search</h4>
+                                                        <form>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Snipp
+                                                                                Member ID</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input id="userName-21" name="userName"
+                                                                                type="text" class=" form-control"
+                                                                                placeholder="Enter Snipp Member ID">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block">External Reference</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="External Reference">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Email
+                                                                                Address</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Email Address">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Device
+                                                                                Number</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Device Number">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block">Surname</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Surname">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">First
+                                                                                Name</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter First Name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Zip
+                                                                                Code</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Zip Code">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Include Prospects</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Phonetic Search</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Only Prospects</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div class="col-sm-12 p-0">
+                                                            <div class="flex-start">
+                                                                <button onClick="toggleTable()"
+                                                                    class="btn btn-grd-primary ">Submit</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+                                                <!-- <div id="searcTable" class="card hidden">
+                                                    <div class="card-header">
+                                                        <h5>Search Results</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="dt-responsive table-responsive">
+                                                            <table id="dom-table"
+                                                                class="table table-striped table-bordered nowrap">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>MemberId</th>
+                                                                        <th>Site</th>
+                                                                        <th>Surname</th>
+                                                                        <th>Firstname</th>
+                                                                        <th>AddressLine1</th>
+                                                                        <th>City</th>
+                                                                        <th>Zip</th>
+                                                                        <th>ActivityStatus</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2131232</td>
+                                                                        <td>Baseline head</td>
+                                                                        <td>Surname</td>
+                                                                        <td>test_AssignCoupon</td>
+                                                                        <td>t777</td>
+                                                                        <td>Clayton</td>
+                                                                        <td>36016</td>
+                                                                        <td> <span
+                                                                                class="tableStatusActivationCheck">Activate</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button class="btn btn-success btn-icon"><i
+                                                                                    class="icofont icofont-eye-alt"></i></button>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2131232</td>
+                                                                        <td>Baseline head</td>
+                                                                        <td>Surname</td>
+                                                                        <td>test_AssignCoupon</td>
+                                                                        <td>t777</td>
+                                                                        <td>Clayton</td>
+                                                                        <td>36016</td>
+                                                                        <td> <span
+                                                                                class="tableStatusDeActivationCheck">Deactivate</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button class="btn btn-success btn-icon"><i
+                                                                                    class="icofont icofont-eye-alt"></i></button>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2131232</td>
+                                                                        <td>Baseline head</td>
+                                                                        <td>Surname</td>
+                                                                        <td>test_AssignCoupon</td>
+                                                                        <td>t777</td>
+                                                                        <td>Clayton</td>
+                                                                        <td>36016</td>
+                                                                        <td> <span
+                                                                                class="tableStatusActivationCheck">Activate</span>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button class="btn btn-success btn-icon"><i
+                                                                                    class="icofont icofont-eye-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Page body end -->
+                                </div>
+                            </div>
+                            <!-- Main-body end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Warning Section Ends -->
+    <script src="./../libraries/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="./../libraries/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="./../libraries/assets/pages/data-table/js/jszip.min.js"></script>
+    <script src="./../libraries/assets/pages/data-table/js/pdfmake.min.js"></script>
+    <script src="./../libraries/assets/pages/data-table/js/vfs_fonts.js"></script>
+    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="./../libraries/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="./../libraries/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+    <script src="./../libraries/assets/pages/data-table/js/data-table-custom.js"></script>
+
+    <script
+        src="./../libraries/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="./../libraries/bower_components/jquery/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./../libraries/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./../libraries/bower_components/popper.js/js/popper.min.js"></script>
+    <script type="text/javascript" src="./../libraries/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript"
+        src="./../libraries/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/modernizr.js"></script>
+    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/css-scrollbars.js"></script>
+    <!-- Accordion js -->
+    <script type="text/javascript" src="./../libraries/assets/pages/accordion/accordion.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="./../libraries/bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript"
+        src="./../libraries/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript"
+        src="./../libraries/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript"
+        src="./../libraries/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+    <!-- Custom js -->
+    <script src="./../libraries/assets/js/pcoded.min.js"></script>
+    <script src="./../libraries/assets/js/vartical-layout.min.js"></script>
+    <script src="./../libraries/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="./../libraries/assets/js/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+
+        function toggleTable() {
+            document.getElementById("searcTable").classList.toggle("hidden");
+        }
+
+      
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+
+        var today = year + "-" + month + "-" + day;
+        document.getElementById('dateofBirth').value = today;
+
+    </script>
+</body>
+
+</html>
