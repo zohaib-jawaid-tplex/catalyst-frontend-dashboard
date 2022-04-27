@@ -22,6 +22,7 @@
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <!-- Required Fremwork -->
+
     <link rel="stylesheet" type="text/css" href="./../libraries/bower_components/bootstrap/css/bootstrap.min.css">
     <!-- themify-icons line icon -->
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/themify-icons/themify-icons.css">
@@ -30,6 +31,7 @@
     <!-- feather Awesome -->
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/feather/css/feather.css">
     <!-- Style.css -->
+
     <!-- <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css"> -->
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/jquery.mCustomScrollbar.css">
@@ -336,7 +338,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                 <li class="pcoded-hasmenu">
+                                <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Gift Cards</span>
@@ -397,11 +399,8 @@
                                                 <span class="pcoded-mtext">Device Numbering</span>
                                             </a>
                                         </li>
-
-
-                                        
                                     </ul>
-                                    
+
                                 </li>
                             </ul>
                         </div>
@@ -417,7 +416,7 @@
                                             <div class="col-lg-8">
                                                 <div class="page-header-title">
                                                     <div class="d-inline">
-                                                        <h4>Segment Admin</h4>
+                                                        <h4>Device Number Generator Admin</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -436,17 +435,10 @@
                                                 </div> -->
                                             </div>
 
-                                                <div class="col-lg-8 mt-2 hidden" id="create-new-segment">
-                                                    <div class="page-header-title">
-                                                        <div class="d-inline">
-                                                            <h4>Create New Segment</h4>
-                                                        </div>
-                                                    </div>
-                                            </div>
+
                                         </div>
-                                        <button onClick="toggleTable()" id="new-segment-btn"
-                                        class="btn btn-grd-primary mt-2">New Segment</button>
-                                        
+
+
                                     </div>
                                     <!-- Page-header end -->
 
@@ -458,27 +450,101 @@
                                                 <h5>Search Results</h5>
                                             </div> -->
                                             <div class="card-block">
+
+                                                <form>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-6">
+                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Name</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="userName-21" name="userName" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Prefix</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="userName-21" name="userName" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2"
+                                                                        class="block">Description</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <textarea id="userName-21" name="userName"
+                                                                        type="text" class=" form-control"
+                                                                        placeholder="">
+                                                                        </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Status</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <select id="hello-single" class="form-control">
+                                                                        <option value="">Select</option>
+                                                                        <option value="cheese">Cheese</option>
+                                                                        <option value="h">Hanry Die</option>
+                                                                        <option value="c">Come Leo</option>
+                                                                        <option value="h">Hampri Catlin</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-sm-12">
+                                                            <div class="flex-start">
+                                                                <button class="btn btn-grd-primary">Search</button>
+                                                             
+                                                                    <button onclick="toggleTable()" id="new-segment-btn"
+                                                                    class="btn btn-grd-primary">New </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+
                                                 <div class="dt-responsive table-responsive">
                                                     <table id="dom-table"
                                                         class="table table-striped table-bordered nowrap">
                                                         <thead>
                                                             <tr>
                                                                 <th>Name</th>
-                                                                <th>Valid From</th>
-                                                                <th>Valid To</th>
-                                                                <!-- <th>Firstname</th>
-                                                                <th>AddressLine1</th>
-                                                                <th>City</th>
-                                                                <th>Zip</th>
-                                                                <th>ActivityStatus</th> -->
+                                                                <th>Created Date</th>
+                                                                <th>Status</th>
+                                                                <th>Prefix</th>
+                                                                <th>Total Number Length</th>
+                                                                <!-- <th>City</th> -->
+                                                                <!-- <th>Zip</th> -->
+                                                                <!-- <th>ActivityStatus</th> -->
                                                                 <th></th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>Georgia Sank</td>
+                                                                <td>AlphaNumeric</td>
                                                                 <td>01/20/2021</td>
-                                                                <td>01/20/2022	</td>
+                                                                <td>Active</td>
+                                                                <td>APL</td>
+                                                                <td>12</td>
                                                                 <!-- <td>test_AssignCoupon</td>
                                                                 <td>t777</td>
                                                                 <td>Clayton</td>
@@ -486,144 +552,214 @@
                                                                 <td> <span
                                                                         class="tableStatusActivationCheck">Activate</span>
                                                                 </td> -->
-                                                                <td class="justify-content-center d-flex"> 
+                                                                <td class="justify-content-center d-flex">
                                                                     <a class="btn btn-success btn-icon" href="#">
-                                                                        <i style="margin: 0;" class="icofont icofont-edit-alt" 
-                                                                        onClick="toggleTable()"></i>
+                                                                        <i style="margin: 0;"
+                                                                            class="icofont icofont-edit-alt"
+                                                                            onClick="toggleTable()"></i>
                                                                     </a>
 
                                                                 </td>
                                                             </tr>
-                                                         
+
                                                         </tbody>
                                                     </table>
                                                 </div>
-                                                   <!-- Pagination start -->
-                                    <nav aria-label="...">
-                                        <ul class="pagination justify-content-end m-t-20 m-b-20">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <!-- Pagination end -->
+                                                <!-- Pagination start -->
+                                                <nav aria-label="...">
+                                                    <ul class="pagination justify-content-end m-t-20 m-b-20">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <!-- Pagination end -->
                                             </div>
                                         </div>
-                                        <div class="row card hidden" id="create-form">
-                                            <div class="col-sm-12">
-                                                <!-- Basic Form Inputs card start -->
-                                                <div class="card">
 
-                                                    <div class="card-block">
-                                                        <!-- <h4 class="sub-title">Member Search</h4> -->
-                                                        <form>
+                                        <div id="create-form" class="card hidden">
+
+                                            <div class="card-block">
+                                                <form>
+                                                    <div class="form-group row">
+                                                        <div class="col-sm-6">
+                                                            <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
                                                             <div class="form-group row">
-                                                                <div class="col-sm-6">
-                                                                    <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Name</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="text" class=" form-control"
-                                                                                placeholder="Name">
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Name</label>
                                                                 </div>
-                                                                <div class="col-sm-6">
-                                                                    <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Description</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <textarea id="userName-21" name="userName"
-                                                                                type="text" class=" form-control"
-                                                                                placeholder="Name">
-                                                                                </textarea>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="userName-21" name="userName" type="text"
+                                                                        class=" form-control" placeholder="">
                                                                 </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2"
-                                                                                class="block">Valid from</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="date" class="form-control"
-                                                                                placeholder="Date">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Valid to</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="date" class="form-control"
-                                                                                placeholder="Date">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Site</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <select name="select" class="form-control form-control-inverse">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            
-                                                             
-                                                                
-                                                               
-                                                               
-                                                             
                                                             </div>
-                                                            <div class="row">
-                                                                <div class="col-sm-12 p-0">
-                                                                    <div class="flex-start">
-                                                                        <button 
-                                                                            class="btn btn-grd-primary ">Save</button>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2"
+                                                                        class="block">Description</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <textarea id="userName-21" name="userName"
+                                                                        type="text" class=" form-control"
+                                                                        placeholder="">
+                                                                        </textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Status</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <select id="hello-single" class="form-control">
+                                                                        <option value="">Select</option>
+                                                                        <option value="cheese">Cheese</option>
+                                                                        <option value="h">Hanry Die</option>
+                                                                        <option value="c">Come Leo</option>
+                                                                        <option value="h">Hampri Catlin</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Prefix</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="userName-21" name="userName" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-                                                                            <button 
-                                                                            class="btn btn-grd-secondary ">Cancel</button>
-                                                                    </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Suffix</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="uSuffix" name="Suffix" type="text"
+                                                                        class=" form-control" placeholder="">
                                                                 </div>
                                                             </div>
-                                                        </form>
-                                                        <!-- <div class="col-sm-12 p-0">
-                                                            <div class="flex-start">
-                                                                <button onClick="toggleTable()"
-                                                                    class="btn btn-grd-primary ">New Segment</button>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">Total Number
+                                                                        Length</label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="total-num" name="total-num" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
                                                             </div>
-                                                        </div> -->
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">
+                                                                        Check Sum Algorithm
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <select id="hello-single" class="form-control">
+                                                                        <option value="">Select</option>
+                                                                        <option value="cheese">Cheese</option>
+                                                                        <option value="h">Hanry Die</option>
+                                                                        <option value="c">Come Leo</option>
+                                                                        <option value="h">Hampri Catlin</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">
+                                                                        Minimum Threshold Pool
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="total-num" name="total-num" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">
+                                                                        Alpha Numeric
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <label class="device-toggle-switch">
+                                                                        <input type="checkbox" checked
+                                                                            style="visibility: hidden;">
+                                                                        <span class="device-toggle-slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">
+                                                                       Created By
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="total-num" name="total-num" type="text"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12">
+                                                                    <label for="userName-2" class="block">
+                                                                       Created Date
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <input id="total-num" name="total-num" type="date"
+                                                                        class=" form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
                                                     </div>
-                                                </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-sm-12">
+                                                            <div class="flex-start">
+                                                                <button class="btn btn-grd-primary"
+                                                                    onClick="toggleTable()">Save</button>
 
-                                               
+                                                                <button class="btn btn-grd-secondary"
+                                                                    onClick="toggleTable()">Cancel</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
 
                                             </div>
                                         </div>
+
                                     </div>
                                     <!-- Page body end -->
                                 </div>
@@ -776,14 +912,16 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-23581568-13');
-
         function toggleTable() {
             document.getElementById("searcTable").classList.toggle("hidden");
             document.getElementById("new-segment-btn").classList.toggle("hidden");
             
+            // document.getElementById("search-filter").classList.toggle("hidden");
+
             document.getElementById("create-form").classList.toggle("hidden");
-            document.getElementById("create-new-segment").classList.toggle("hidden");
-            
+
+
+
         }
 
     </script>
