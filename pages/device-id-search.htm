@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Adminty - Premium Admin Template by Colorlib </title>
+    <title>Catalyst Portal </title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -33,6 +33,12 @@
     <!-- <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css"> -->
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/jquery.mCustomScrollbar.css">
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css"
+        href="./../libraries/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="./../libraries/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
 </head>
 
 <body>
@@ -287,13 +293,13 @@
                                         <span class="pcoded-mtext">Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="pcoded-hasmenu">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Customer Service</span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="">
+                                        <li class="active">
                                             <a href="members-search.htm">
                                                 <span class="pcoded-mtext">Member Search</span>
                                             </a>
@@ -336,7 +342,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                 <li class="pcoded-hasmenu">
+                                <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Gift Cards</span>
@@ -350,7 +356,7 @@
                                     </ul>
                                     <ul class="pcoded-submenu">
                                         <li class="">
-                                            <a href="index-1.htm">
+                                            <a href="bulk-upload.htm">
                                                 <span class="pcoded-mtext">Bulk Load</span>
                                             </a>
                                         </li>
@@ -363,14 +369,13 @@
                                         </li>
                                     </ul>
                                 </li>
-
-                                <li class="pcoded-hasmenu  active pcoded-trigger">
+                                <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Reward Admin</span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="active">
+                                        <li class="">
                                             <a href="rewards-list.htm">
                                                 <span class="pcoded-mtext">Rewards</span>
                                             </a>
@@ -389,7 +394,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </li>
                             </ul>
                         </div>
@@ -405,7 +410,7 @@
                                             <div class="col-lg-8">
                                                 <div class="page-header-title">
                                                     <div class="d-inline">
-                                                        <h4>Rewards</h4>
+                                                        <h4>Member Search</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,12 +418,12 @@
                                                 <div class="page-header-breadcrumb">
                                                     <ul class="breadcrumb-title">
                                                         <li class="breadcrumb-item">
-                                                            <a href="index-1.htm"> <i class="feather icon-home"></i>
+                                                            <a href="index.htm"> <i class="feather icon-home"></i>
                                                             </a>
                                                         </li>
-                                                        <li class="breadcrumb-item"><a href="#!">Customer Service</a>
+                                                        <li class="breadcrumb-item"><a href="#!">Gift Cards</a>
                                                         </li>
-                                                        <li class="breadcrumb-item"><a href="#!">Rewards</a>
+                                                        <li class="breadcrumb-item"><a href="#!">Search</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -431,69 +436,199 @@
                                     <div class="page-body">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <!-- Basic Form Inputs card start -->
-                                                <div id="searcTable" class="card">
 
-                                                    <div class="card-header addRewards">
-                                                        <a class="btn hor-grd btn-grd-primary " href="./new-rewards.htm">New Reward</a>
-                                                        <!-- <button >New Reward</button> -->
+                                                <div id="deviceidcontainer" class="card">
+                                                    <div class="card-block">
+                                                        <h4 class="sub-title">Gift Cards</h4>
+                                                        <!-- <form> -->
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Device Id</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input id="userName-21" name="userName"
+                                                                                type="text" class=" form-control"
+                                                                                placeholder="Enter Device Id ">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                               
+                                                            
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-1 col-sm-6">
+                                                                            <button class="btn btn-grd-primary ">Search</button>
+                                                                        </div>
+                                                                        <div class="mt-1 col-sm-6">
+                                                                            <button onClick="toggleTable()" class="btn btn-grd-primary ">Add New Device</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <!-- </form> -->
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div id="addDeviceContainer"  class="card hidden">
+                                                    <div class="card-block">
+                                                        <h4 class="sub-title">Gift Cards</h4>
+                                                        <form>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-6">
+                                                                    <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Trx Date From</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input id="userName-21" name="userName"
+                                                                                type="date" class=" form-control"
+                                                                                placeholder="Enter Trx Date From">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block">Trx Date To</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Trx Date to">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Trx Amount From</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Trx Amount From">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Trx Amount To</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Amount To">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block">Balanace From</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Balance From">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Balance To</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Balance To">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Profile</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Profile">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Site</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Site">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </form>
+                                                        <div class="row m-0">
+                                                            <div class="col-sm-3">
+                                                                <div class="flex-start">
+                                                                    <button class="btn btn-primary ">Search</button>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <div class="col-sm-3 ml-2">
+                                                                <div class="flex-start">
+                                                                    <button  class="btn btn-info">Reset</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div class="flex-start">
+                                                                    <button  onClick="toggleTable()" class="btn btn-danger ">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+
+
+                                                <div  id="searcTable" class="card hidden">
+                                                    <div class="card-header">
+                                                        <h5>Search Results</h5>
                                                     </div>
                                                     <div class="card-block">
                                                         <div class="dt-responsive table-responsive">
-                                                            <table id="dom-table"
+                                                            <table id="reorder-events"
                                                                 class="table table-striped table-bordered nowrap">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th>Name</th>
-                                                                        <th>Description</th>
-                                                                        <th>Start Date</th>
-                                                                        <th>End Date</th>
-                                                                        <th>Enabled</th>
-                                                                        <th>Supplier</th>
+                                                                        <th>DeviceId</th>
+                                                                        <th>Site</th>
+                                                                        <th>Profile</th>
+                                                                        <th>Balance</th>
                                                                         <th></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>Rebate1</td>
-                                                                        <td>TESt</td>
-                                                                        <td>06/01/2021</td>
-                                                                        <td>12/31/2022</td>
-                                                                        <td>Yes</td>
-                                                                        <td>Snipp</td>
-                                                                        <td style="text-align: center;">
-                                                                            <a class="btn btn-success btn-icon">
-                                                                                <i style="margin: 0;" class="icofont icofont-edit-alt"></i>
-                                                                            </a>
+                                                                        <td>A01941686831324Z</td>
+                                                                        <td>Acme</td>
+                                                                        <td>Test device19</td>
+                                                                        <td>100.00</td>
+                                                                        <td>
+                                                                            <a style="height: 30px;width: 30px;" class="btn btn-success btn-icon"
+                                                                                href="members-view.htm">
+                                                                                <i style="margin: 0;"
+                                                                                    class="icofont icofont-eye-alt"></i>
 
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Rebate1</td>
-                                                                        <td>TESt</td>
-                                                                        <td>06/01/2021</td>
-                                                                        <td>12/31/2022</td>
-                                                                        <td>Yes</td>
-                                                                        <td>Snipp</td>
-                                                                        <td style="text-align: center;">
-                                                                            <a class="btn btn-success btn-icon">
-                                                                                <i style="margin: 0;" class="icofont icofont-edit-alt"></i>
                                                                             </a>
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Rebate1</td>
-                                                                        <td>TESt</td>
-                                                                        <td>06/01/2021</td>
-                                                                        <td>12/31/2022</td>
-                                                                        <td>Yes</td>
-                                                                        <td>Snipp</td>
-                                                                        <td style="text-align: center;">
-                                                                            <a class="btn btn-success btn-icon">
-                                                                                <i style="margin: 0;" class="icofont icofont-edit-alt"></i>
-                                                                            </a>
-
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -501,6 +636,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!--  -->
 
                                             </div>
                                         </div>
@@ -519,135 +655,47 @@
         </div>
     </div>
 
-
-    <!-- Main-body end -->
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
-        to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="../files/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
     <!-- Warning Section Ends -->
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
-        to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="../files/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-    <!-- Warning Section Ends -->
-    <script src="./../libraries/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/jszip.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/pdfmake.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/vfs_fonts.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script
-        src="./../libraries/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
     <!-- Required Jquery -->
-    <script type="text/javascript" src="./../libraries/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
     <!-- jquery slimscroll js -->
     <script type="text/javascript"
-        src="./../libraries/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+        src=".\..\libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
-    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/modernizr.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/css-scrollbars.js"></script>
-    <!-- Accordion js -->
-    <script type="text/javascript" src="./../libraries/assets/pages/accordion/accordion.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
+
+    <!-- data-table js -->
+    <script src=".\..\libraries\bower_components\datatables.net\js\jquery.dataTables.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\dataTables.buttons.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\jszip.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\pdfmake.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\vfs_fonts.js"></script>
+    <script
+        src=".\..\libraries\assets\pages\data-table\extensions\row-reorder\js\dataTables.rowReorder.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\buttons.print.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\buttons.html5.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-bs4\js\dataTables.bootstrap4.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-responsive\js\dataTables.responsive.min.js"></script>
+    <script
+        src=".\..\libraries\bower_components\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js"></script>
     <!-- i18next.min.js -->
-    <script type="text/javascript" src="./../libraries/bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\i18next\js\i18next.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+        src=".\..\libraries\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+        src=".\..\libraries\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+        src=".\..\libraries\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
     <!-- Custom js -->
-    <script src="./../libraries/assets/js/pcoded.min.js"></script>
-    <script src="./../libraries/assets/js/vartical-layout.min.js"></script>
-    <script src="./../libraries/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="./../libraries/assets/js/script.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\extensions\row-reorder\js\row-reorder-custom.js"></script>
+    <script src=".\..\libraries\assets\js\pcoded.min.js"></script>
+    <script src=".\..\libraries\assets\js\vartical-layout.min.js"></script>
+    <script src=".\..\libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\assets\js\script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
@@ -659,6 +707,8 @@
 
         function toggleTable() {
             document.getElementById("searcTable").classList.toggle("hidden");
+            document.getElementById("addDeviceContainer").classList.toggle("hidden");
+            document.getElementById("deviceidcontainer").classList.toggle("hidden");
         }
 
     </script>

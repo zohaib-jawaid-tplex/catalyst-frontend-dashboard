@@ -82,6 +82,8 @@ $(document).ready(function() {
         "searching": true
     });
 
+   
+
     $("a[data-toggle=\"tab\"]").on("shown.bs.tab", function(e) {
         $($.fn.dataTable.tables(true)).DataTable().columns.adjust();
     });

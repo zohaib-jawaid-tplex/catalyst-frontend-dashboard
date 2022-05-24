@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Adminty - Premium Admin Template by Colorlib </title>
-
+    <title>Catalyst Portal </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +26,12 @@
     <!-- <link rel="stylesheet" type="text/css" href="libraries\assets\css\style.css"> -->
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./../libraries/assets/css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css" href="./../libraries/assets/icon/font-awesome/css/font-awesome.min.css">
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css"
+        href="./../libraries/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="./../libraries/assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="./../libraries/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
 </head>
 
 <body>
@@ -282,13 +286,13 @@
                                         <span class="pcoded-mtext">Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="pcoded-hasmenu">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Customer Service</span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="">
+                                        <li class="active">
                                             <a href="members-search.htm">
                                                 <span class="pcoded-mtext">Member Search</span>
                                             </a>
@@ -331,7 +335,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                 <li class="pcoded-hasmenu">
+                                <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Gift Cards</span>
@@ -345,7 +349,7 @@
                                     </ul>
                                     <ul class="pcoded-submenu">
                                         <li class="">
-                                            <a href="index-1.htm">
+                                            <a href="bulk-upload.htm">
                                                 <span class="pcoded-mtext">Bulk Load</span>
                                             </a>
                                         </li>
@@ -358,13 +362,13 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="pcoded-hasmenu  active pcoded-trigger">
+                                <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
                                         <span class="pcoded-micon"><i class="feather icon-home"></i></span>
                                         <span class="pcoded-mtext">Reward Admin</span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="active">
+                                        <li class="">
                                             <a href="rewards-list.htm">
                                                 <span class="pcoded-mtext">Rewards</span>
                                             </a>
@@ -383,7 +387,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    
+
                                 </li>
                             </ul>
                         </div>
@@ -399,7 +403,7 @@
                                             <div class="col-lg-8">
                                                 <div class="page-header-title">
                                                     <div class="d-inline">
-                                                        <h4>New Rewards</h4>
+                                                        <h4>Member Registration</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -412,7 +416,7 @@
                                                         </li>
                                                         <li class="breadcrumb-item"><a href="#!">Customer Service</a>
                                                         </li>
-                                                        <li class="breadcrumb-item"><a href="#!">New Rewards</a>
+                                                        <li class="breadcrumb-item"><a href="#!">Member Registration</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -427,24 +431,29 @@
                                             <div class="col-sm-12">
                                                 <!-- Basic Form Inputs card start -->
                                                 <div class="card">
-
-                                                    <div class="card-block">
-                                                        <div class="newRewardsTopHeader">
-                                                            <a href="rewards-list.htm"><i class="fa fa-chevron-circle-left"></i> Back</a>
+                                                    <div class="card-header">
+                                                        <h4 class="sub-title">Member Registration</h4>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="feather icon-maximize full-card"></i></li>
+                                                                <li><i class="feather icon-minus minimize-card"></i></li>
+                                                                <!-- <li><i class="feather icon-trash-2 close-card"></i></li> -->
+                                                            </ul>
                                                         </div>
-                                                        <h4 class="sub-title"></h4>
+                                                    </div>
+                                                    <div class="card-block">
                                                         <form>
                                                             <div class="form-group row">
                                                                 <div class="col-sm-6">
                                                                     <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Product Name</label>
+                                                                            <label for="userName-2" class="block">Location</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
                                                                             <input id="userName-21" name="userName"
                                                                                 type="text" class=" form-control"
-                                                                                placeholder="Enter Product Name">
+                                                                                placeholder="Enter Location">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -452,57 +461,33 @@
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
                                                                             <label for="userName-2"
-                                                                                class="block">Supplier</label>
+                                                                                class="block">Address Line 1</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Address Line 1">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Item Type</label>
+                                                                            <label for="userName-2" class="block">Card Number</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Card Number">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Item Limit Period</label>
+                                                                            <label for="userName-2" class="block">Address Line 2</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Address Line 2">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -510,129 +495,167 @@
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
                                                                             <label for="userName-2"
-                                                                                class="block">Item Limit Qty</label>
+                                                                                class="block">First Name
+                                                                                *</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
                                                                             <input type="text" class="form-control"
-                                                                                placeholder="Enter Item Limit Qty">
+                                                                                placeholder="Enter First Name*">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">External ID</label>
+                                                                            <label for="userName-2" class="block">Zip
+                                                                                Code</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
                                                                             <input type="text" class="form-control"
-                                                                                placeholder="Enter External ID">
+                                                                                placeholder="Enter Zip Code">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Enter Start Date</label>
+                                                                            <label for="userName-2"
+                                                                                class="block">Surname*</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <input type="date" class="form-control"
-                                                                                placeholder="Start Date">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Enter End Date</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="date" class="form-control"
-                                                                                placeholder="End Date">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Surname">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Enter Short Description</label>
+                                                                            <label for="userName-2" class="block">City</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Enter Short Description" minlength="0" maxlength="500"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Enter Long Description</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Enter Long Description" minlength="0" maxlength="500"></textarea>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter City">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Terms & Conditions</label>
+                                                                            <label for="userName-2" class="block">Date of Birth</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Terms & Conditions" minlength="0" maxlength="500"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Privacy Policy</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Privacy Policy" minlength="0" maxlength="500"></textarea>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Date of Birth">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Redemption Details</label>
+                                                                            <label for="userName-2" class="block">Country</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Redemption Details" minlength="0" maxlength="500"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Catalog Settings</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <textarea type="date" class="form-control"
-                                                                                placeholder="Catalog Settings" minlength="0" maxlength="500"></textarea>
+                                                                          
+                                                                                <select id="userName-21" class=" form-control" name="select" >
+                                                                                    <option value="opt1"> Select</option>
+                                                                                    <option value="opt2"></option>
+                                                                                    <option value="opt3"></option>
+                                                                                    <option value="opt4"></option>
+                                                                                    <option value="opt5"></option>
+                                                                           
+                                                                                </select>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Categorization</label>
+                                                                            <label for="userName-2" class="block">Application Store</label>
                                                                         </div>
                                                                         <div class="col-sm-12">
-                                                                            <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
+                                                                          
+                                                                                <select id="userName-21" class=" form-control" name="select" >
+                                                                                    <option value="opt1"> Select</option>
+                                                                                    <option value="opt2"></option>
+                                                                                    <option value="opt3"></option>
+                                                                                    <option value="opt4"></option>
+                                                                                    <option value="opt5"></option>
+                                                                           
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">State</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                          
+                                                                                <select id="userName-21" class=" form-control" name="select" >
+                                                                                    <option value="opt1"> Select</option>
+                                                                                    <option value="opt2"></option>
+                                                                                    <option value="opt3"></option>
+                                                                                    <option value="opt4"></option>
+                                                                                    <option value="opt5"></option>
+                                                                           
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Language</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                          
+                                                                                <select id="userName-21" class=" form-control" name="select" >
+                                                                                    <option value="opt1"> Select</option>
+                                                                                    <option value="opt2"></option>
+                                                                                    <option value="opt3"></option>
+                                                                                    <option value="opt4"></option>
+                                                                                    <option value="opt5"></option>
+                                                                           
+                                                                                </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">eMail
+                                                                                *</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter eMail
+                                                                                *">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Mobile*
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Mobile
+                                                                                ">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2" class="block">Telephone</label>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Enter Telephone">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -650,13 +673,13 @@
                                                                                         <i
                                                                                             class="cr-icon icofont icofont-ui-check txt-primary"></i>
                                                                                     </span>
-                                                                                    <span>Enabled</span>
+                                                                                    <span>T&C's Accepted</span>
                                                                                 </label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-3">
+                                                                <div class="col-sm-2">
                                                                     <div class="form-group row">
                                                                         <div class="col-sm-12">
                                                                             <label for="userName-2"
@@ -670,7 +693,67 @@
                                                                                         <i
                                                                                             class="cr-icon icofont icofont-ui-check txt-primary"></i>
                                                                                     </span>
-                                                                                    <span>Save Data to Rewards Api</span>
+                                                                                    <span>Contact by Mail</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Can Send EMail</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Contact by Phone</span>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <label for="userName-2"
+                                                                                class="block"></label>
+                                                                        </div>
+                                                                        <div class="mt-3 col-sm-12">
+                                                                            <div class="checkbox-fade fade-in-primary">
+                                                                                <label>
+                                                                                    <input type="checkbox" value="">
+                                                                                    <span class="cr">
+                                                                                        <i
+                                                                                            class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                    </span>
+                                                                                    <span>Contact by SMS</span>
                                                                                 </label>
                                                                             </div>
                                                                         </div>
@@ -678,218 +761,19 @@
                                                                 </div>
                                                             </div>
                                                         </form>
-                                                    </div>
-                                                </div>
-
-                                                <div class="card">
-                                                    <div class="card-block">
-                                                        <h4 class="sub-title">Options</h4>
-                                                        <form>
-                                                            <div class="form-group row">
-                                                                <div class="col-sm-6">
-                                                                    <!-- <input type="text" class="form-control" placeholder="Snipp Member ID" required> -->
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Option ID</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Enter Product Name" value="1" readonly>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2"
-                                                                                class="block">Option Name</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Enter Option Name">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">External Option ID</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="External Option ID">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Cost Price</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Cost Price">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Points Value</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Enter Points Value">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Total Available Quantity</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Enter Total Available Quantity">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Tags</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input id="userName-21" name="userName"
-                                                                                type="number" class=" form-control"
-                                                                                placeholder="Enter Tags">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12">
-                                                                    <h4 class="sub-title">Attributes</h4>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2"
-                                                                                class="block">Item Limit Qty</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="text" class="form-control"
-                                                                                placeholder="Enter Item Limit Qty">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">External ID</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="text" class="form-control"
-                                                                                placeholder="Enter External ID">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <label for=""></label>
-                                                                     <button style="margin-top: 25px;"  class="btn hor-grd btn-grd-primary mt-25 mb-2 ">Add</button>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Small Image URL</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="file" class="form-control"
-                                                                                placeholder="Add Image">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Medium Image URL</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="file" class="form-control"
-                                                                                placeholder="Medium Image">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Large Image URL</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="file" class="form-control"
-                                                                            placeholder="Large Image">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-12">
-                                                                    <h4 class="sub-title">Availability</h4>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Site</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <select name="select" class="form-control">
-                                                                                <option value="opt1">Select One Value Only</option>
-                                                                                <option value="opt2">Type 2</option>
-                                                                                <option value="opt3">Type 3</option>
-                                                                                <option value="opt4">Type 4</option>
-                                                                                <option value="opt5">Type 5</option>
-                                                                                <option value="opt6">Type 6</option>
-                                                                                <option value="opt7">Type 7</option>
-                                                                                <option value="opt8">Type 8</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Quantity</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="number" class="form-control"
-                                                                            placeholder="Large Image" value="0" readonly>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="form-group row">
-                                                                        <div class="col-sm-12">
-                                                                            <label for="userName-2" class="block">Usage</label>
-                                                                        </div>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="number" class="form-control"
-                                                                            placeholder="Large Image" value="0" readonly>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                               
-                                                            </div>
-                                                        </form>
                                                         <div class="col-sm-12 p-0">
                                                             <div class="flex-start">
-                                                                <button onClick="toggleTable()"
+                                                                <button 
                                                                     class="btn btn-grd-primary ">Submit</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                             
+
+
+                                             
 
                                             </div>
                                         </div>
@@ -908,135 +792,47 @@
         </div>
     </div>
 
-
-    <!-- Main-body end -->
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
-        to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="../files/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
     <!-- Warning Section Ends -->
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers
-        to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="../files/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-    <!-- Warning Section Ends -->
-    <script src="./../libraries/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/jszip.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/pdfmake.min.js"></script>
-    <script src="./../libraries/assets/pages/data-table/js/vfs_fonts.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script src="./../libraries/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script
-        src="./../libraries/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
     <!-- Required Jquery -->
-    <script type="text/javascript" src="./../libraries/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\jquery\js\jquery.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\popper.js\js\popper.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\bootstrap\js\bootstrap.min.js"></script>
     <!-- jquery slimscroll js -->
     <script type="text/javascript"
-        src="./../libraries/bower_components/jquery-slimscroll/js/jquery.slimscroll.js"></script>
+        src=".\..\libraries\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
     <!-- modernizr js -->
-    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/modernizr.js"></script>
-    <script type="text/javascript" src="./../libraries/bower_components/modernizr/js/css-scrollbars.js"></script>
-    <!-- Accordion js -->
-    <script type="text/javascript" src="./../libraries/assets/pages/accordion/accordion.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\modernizr\js\modernizr.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\modernizr\js\css-scrollbars.js"></script>
+
+    <!-- data-table js -->
+    <script src=".\..\libraries\bower_components\datatables.net\js\jquery.dataTables.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\dataTables.buttons.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\jszip.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\pdfmake.min.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\js\vfs_fonts.js"></script>
+    <script
+        src=".\..\libraries\assets\pages\data-table\extensions\row-reorder\js\dataTables.rowReorder.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\buttons.print.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-buttons\js\buttons.html5.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-bs4\js\dataTables.bootstrap4.min.js"></script>
+    <script src=".\..\libraries\bower_components\datatables.net-responsive\js\dataTables.responsive.min.js"></script>
+    <script
+        src=".\..\libraries\bower_components\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js"></script>
     <!-- i18next.min.js -->
-    <script type="text/javascript" src="./../libraries/bower_components/i18next/js/i18next.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\bower_components\i18next\js\i18next.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
+        src=".\..\libraries\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
+        src=".\..\libraries\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript"
-        src="./../libraries/bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
+        src=".\..\libraries\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
     <!-- Custom js -->
-    <script src="./../libraries/assets/js/pcoded.min.js"></script>
-    <script src="./../libraries/assets/js/vartical-layout.min.js"></script>
-    <script src="./../libraries/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="./../libraries/assets/js/script.js"></script>
+    <script src=".\..\libraries\assets\pages\data-table\extensions\row-reorder\js\row-reorder-custom.js"></script>
+    <script src=".\..\libraries\assets\js\pcoded.min.js"></script>
+    <script src=".\..\libraries\assets\js\vartical-layout.min.js"></script>
+    <script src=".\..\libraries\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src=".\..\libraries\assets\js\script.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
